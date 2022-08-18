@@ -1,0 +1,232 @@
+/*
+ * Globals
+ */
+ @import 'https://fonts.googleapis.com/css?family=Share+Tech+Mono';
+ @import 'https://fonts.googleapis.com/css2?family=Fira+Code';
+
+/* Custom default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritance from `body` */
+}
+
+
+/*
+ * Base structure
+ */
+
+body {
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+}
+
+.cover-container {
+  max-width: 42em;
+}
+
+
+/*
+ * Header
+ */
+
+.nav-masthead .nav-link {
+  padding: .25rem 0;
+  font-weight: 700;
+  color: rgba(255, 255, 255, .5);
+  background-color: transparent;
+  border-bottom: .25rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  border-bottom-color: rgba(255, 255, 255, .25);
+}
+
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem;
+  text-decoration:none;
+  color: rgba(255, 255, 255, .5) !important;
+}
+
+.nav-masthead a {
+  text-decoration:none;
+  color: rgba(255, 255, 255, .5);
+}
+
+.nav-masthead .active {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+/*CALCULADORA*/
+#header {
+  text-align: center;
+  font-family: 'Share Tech Mono', monospace;
+}
+
+#calc {  
+  text-align: center;
+	color: #333;
+  width: 380px; 
+  display: block;
+  border-radius:8px;
+  border: 1px solid;
+  border-color: #abc6c2;
+  padding:8px;
+  margin-top:20px;
+  margin-left:auto;
+  margin-right:auto;
+  background: #224662;
+}
+
+#display {
+	background: #bcbcbc;
+	padding: 8px;
+	margin:16px 12px 10px 16px;
+	text-align: center;
+	font-family: 'Share Tech Mono', monospace;
+	border-radius:8px;
+}
+
+#result p{
+font-size:1.8em;
+}
+
+#base select {
+	border: 0px solid #fff;
+	background-color: transparent;
+}
+
+#result,
+#base {
+  text-align: right; 
+}
+
+#keyboard {
+  display: inline-block;  
+  text-align: center;
+  margin-bottom:8px;
+}
+
+#keyboard .row {
+  margin-top: 4px;
+}
+
+#keyboard .row button {
+  width: 62px;
+  margin: 2px;
+}
+
+#keyboard .row .btn-zero {
+  width: 129px;
+}
+
+#keyboard .row .btn-result {  
+  float:right;
+  margin-left:4px;  
+  height: 74px;
+}
+
+#relatorio .accordion-header {
+	background-color: white;
+}
+
+#relatorio .accordion-button:not(.collapsed) {
+	color: #000;
+	background-color: white;
+}
+
+#relatorio .accordion-button:focus {
+	border-color: none;
+}
+
+#relatorio .accordion-body {
+	font-family: 'Fira Code', monospace;
+}
+
+#relatorio::-webkit-scrollbar {
+	width: 8px;
+	background-color: #F5F5F5;
+}
+
+
+#relatorio::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 6px rgba(104, 140, 240, 0.3);
+}
+
+#relatorio::-webkit-scrollbar-thumb {
+	background-color: lightblue;
+	outline: 1px solid slategrey;
+}
+
+/*
+.calculadora {
+	position: static;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: #fff;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.2);
+	border-radius: 14px;
+	padding-bottom: 20px;
+	width: 320px;
+}
+
+.calculadora .display {
+	width: 100%;
+	height: 60px;
+	padding: 20px 0px 80px 0px;
+	background: #FF0509;
+	border-top-left-radius: 14px;
+	border-top-right-radius: 14px;
+}
+
+.calculadora .buttons {
+	padding: 20px 20px 0 20px;
+}
+
+.calculadora .buttons .row {
+	width: 280px;
+	float: left;
+}
+
+.calculadora input[type=button] {
+	width: 60px;
+	height: 60px;
+	float: left;
+	padding: 0;
+	margin: 5px;
+	box-sizing: border-box;
+	background: #ecedef;
+	border: none;
+	font-size: 30px;
+	line-height: 30px;
+	border-radius: 50%;
+	font-weight: 700;
+	color: #5E5858;
+	cursor: pointer;
+	
+}
+.calculadora input[type=text] {
+	width: 270px;
+	height: 60px;
+	float: left;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+	background: none;
+	color: #ffffff;
+	text-align: right;
+	font-weight: 700;
+	font-size: 60px;
+	line-height: 60px;
+	margin: 0 25px;
+	
+}
+.red {
+	background: #FF0509 !important;
+	color: #ffffff !important;
+	
+}
